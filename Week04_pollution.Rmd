@@ -1,7 +1,6 @@
 ---
 title: "Pair Programming Activity: Pollution in Madrid"
 subtitle: "EdinbR Feb 2024"
-date: "`r Sys.Date()`"
 output: html_document
 ---
 
@@ -9,9 +8,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## About the data
+# About the data
 
-The data for this lab were collected under the instructions from Madrid's City Council and are publicly available on their website. In recent years, high levels of pollution during certain dry periods has forced the authorities to take measures against the use of cars and act as a reasoning to propose certain regulations. These data include daily and hourly measurements of air quality from 2001 to 2008. Pollutants are categorized based on their chemical properties.
+The data for this tutorial were collected under the instructions from Madrid's City Council and are publicly available on their website. In recent years, high levels of pollution during certain dry periods has forced the authorities to take measures against the use of cars and act as a reasoning to propose certain regulations. These data include daily and hourly measurements of air quality from 2001 to 2008. Pollutants are categorized based on their chemical properties.
 
 There are a number of stations set up around Madrid and each station's data frame contains all particle measurements that such station has registered from 01/2001 - 04/2008. Not every station has the same equipment, therefore each station can measure only a certain subset of particles. The complete list of possible measurements and their explanations are given by the website:
 
@@ -30,22 +29,26 @@ There are a number of stations set up around Madrid and each station's data fram
 * `TCH`: total hydrocarbons level measured in mg/m³. This group of substances can be responsible of different blood, immune system, liver, spleen, kidneys or lung diseases.
 * `NMHC`: non-methane hydrocarbons (volatile organic compounds) level measured in mg/m³. Long exposure to some of these substances can result in damage to the liver, kidney, and central nervous system. Some of them are suspected to cause cancer in humans.
 
+# Tutorial goals 
+
 The goal of this tutorial is to see if pollutants are decreasing (is air quality improving) and also compare which pollutant has decreased the most over the span of 5 years (2001 - 2006).
 
 **High-level summary of tasks**
 1. First do a plot of one of the pollutants (EBE).
 2. Next, group it by month and year; calculate the maximum value and plot it (to see the trend through time).
-3. Now we will look at which pollutant decreased the most. Repeat the same thing for every column - to speed up the process, use the map() function. First we will look at pollution in 2001 (get the maximum value for each of the pollutants). And then do the same for 2006.
+3. Now we will look at which pollutant decreased the most. Repeat the same thing for every column - to speed up the process, use the `map()` function. First we will look at pollution in 2001 (get the maximum value for each of the pollutants). And then do the same for 2006.
 
-We will be using the `tidyverse` library:
+## Packages 
+
+We will be using the `tidyverse` set of packages:
 
 ```{r load-tidyverse}
 library(tidyverse)
 ```
 
-## Exercises
+# Exercises
 
-Remember to switch driver after each task
+Remember to switch the driver after each task
 
 
 ## Task 1
@@ -53,7 +56,7 @@ Remember to switch driver after each task
 To begin with, load the `madrid_pollution.csv` data set into your R environment. Assign the data to an object called `madrid`.
 
 ```{r task1}
-## your code here
+# your code here
 
 ```
 
@@ -65,7 +68,7 @@ Now that the data is loaded in R, create a scatter plot that compares ethylbenze
 Assign your answer to an object called `EBE_pollution`.
 
 ```{r task2}
-## your code here
+# your code here
 
 ```
 
@@ -76,7 +79,7 @@ What is your conclusion about the level of EBE over time?
 The question above asks you to write out code that allows visualization of all EBE recordings in the dataset - which are taken every single hour of every day. Consequently the graph consists of many points and appears densely plotted. In this question, we are going to clean up the graph and focus on max EBE readings from each month. Create a new data set with maximum EBE reading from each month in each year. Save your new data set as `madrid_pollution`.
 
 ```{r task3}
-## your code here
+# your code here
 
 ```
 
@@ -87,7 +90,7 @@ Plot the new maximum EBE values versus the month they were recorded, split into 
 Assign your answer to an object called `madrid_plot`.
 
 ```{r task4}
-## your code here
+# your code here
 
 ```
 
@@ -98,7 +101,7 @@ Now we want to see which of the pollutants has decreased the most in 2001.
 Assign your answer to an object called `pollution_2001`.
 
 ```{r task5}
-## your code here
+# your code here
 
 ```
 
@@ -108,7 +111,7 @@ Now repeat what you did for Task 5, but filter for 2006 instead.
 Assign your answer to an object called `pollution_2006`.
 
 ```{r task6}
-## your code here
+# your code here
 
 ```
 
@@ -117,7 +120,7 @@ Assign your answer to an object called `pollution_2006`.
 Which pollutant decreased by the greatest magnitude between 2001 and 2006? Come up with a programmatic solution 
 
 ```{r task7}
-## your code here
+# your code here
 
 ```
 
