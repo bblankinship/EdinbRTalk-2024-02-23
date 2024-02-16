@@ -57,6 +57,8 @@ How many observations are in the dataset?
 
 # Exercises
 
+Remember to switch driver after each task
+
 ## Task 1 
 
 Let's start by taking a look at the distribution of plastic waste per capita in 2010. Create a data visualization to observe this distribution:
