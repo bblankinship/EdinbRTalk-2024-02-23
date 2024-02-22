@@ -154,4 +154,4 @@ Visualize the relationship between plastic waste per capita and total population
 
 ```
 
-
+NOTE: This worksheet has been adapted from Data Science in a Box, an interactive data science course created by Mine Cetinkaya-Rundel, available at https://datasciencebox.org/

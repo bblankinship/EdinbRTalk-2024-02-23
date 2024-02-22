@@ -124,3 +124,4 @@ Which pollutant decreased by the greatest magnitude between 2001 and 2006? Come 
 
 ```
 
+NOTE: This worksheet has been adapted from Data Science: First Introduction Worksheets, by Tiffany Timbers, Trevor Campbell and Melissa Lee, available at https://worksheets.datasciencebook.ca/
